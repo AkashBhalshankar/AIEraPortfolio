@@ -87,7 +87,8 @@ export default function Navigator() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 20 }}
-            style={{ background: 'var(--card)', border: '1px solid var(--line)', borderRadius: 12, padding: '8px 10px', maxWidth: 220, fontSize: '.85rem', boxShadow: '0 4px 12px rgba(0,0,0,.15)', display: 'flex', gap: 8, alignItems: 'start' }}
+            onClick={() => speak('Hi, I am Navy, your personal navigator. I will guide you through Akash Bhalshankar\'s portfolio. Click me to stop voice. Click the cross button to close this message box.')}
+            style={{ background: 'var(--card)', border: '1px solid var(--line)', borderRadius: 12, padding: '8px 10px', maxWidth: 220, fontSize: '.85rem', boxShadow: '0 4px 12px rgba(0,0,0,.15)', display: 'flex', gap: 8, alignItems: 'start', cursor: 'pointer' }}
           >
             <span>Hi, I'm Navy, your personal navigator. I'll guide you through Akash Bhalshankar's portfolio. Click me to stop voice. Click the cross button to close this message box.</span>
             <button onClick={() => setShowMsg(false)} style={{ border: 'none', background: 'transparent', cursor: 'pointer', color: 'var(--muted)', fontSize: '.9rem', padding: 0 }}>×</button>
