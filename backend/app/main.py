@@ -34,7 +34,7 @@ app = FastAPI(title="Portfolio API", version="1.0.0")
 @app.on_event("startup")
 def _startup():
     store.load()
-    log.info("data_dir=%s published_exists=%s", store._dir(), (store._dir() / "published.json").exists())
+    print("DATA_DIR", store._dir(), "published_exists", (store._dir() / "published.json").exists(), flush=True)
 from .drive import fetch_resume_pdf
 from .llm import AllProvidersFailed
 from .sync import cached_pdf_path, run_sync
