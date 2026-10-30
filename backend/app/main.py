@@ -14,6 +14,7 @@ Admin (header X-Admin-Token)
   GET  /resume/history    available rollback points
 """
 import logging
+log = logging.getLogger(__name__)
 import re
 import secrets
 from contextlib import asynccontextmanager
