@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Portfolio admin</title>
+<style>
+ body{font:16px/1.5 system-ui,sans-serif;max-width:860px;margin:32px auto;padding:0 16px;background:#E6E3D3;color:#24261B}
+ button{font:600 15px system-ui;padding:10px 16px;border-radius:10px;border:1.5px solid #24261B;background:transparent;cursor:pointer;margin:0 8px 8px 0}
+ button.p{background:#53643A;border-color:#53643A;color:#F0EEE2}
+ textarea,input{width:100%;box-sizing:border-box;font:13px/1.4 ui-monospace,monospace;padding:10px;border-radius:10px;border:1px solid #C2BEA6;background:#F0EEE2}
+ textarea{height:340px} pre{background:#F0EEE2;padding:12px;border-radius:10px;overflow:auto;border:1px solid #C2BEA6}
+</style></head><body>
+<h1>Portfolio admin</h1>
+<p>Sync from Drive, review what changes, then approve. Nothing goes live until you approve.</p>
+<input id="t" type="password" placeholder="Admin token" autocomplete="off">
+<p>
+ <button class="p" onclick="act('POST','/resume/sync')">Sync from Drive</button>
+ <button onclick="act('POST','/resume/sync?force=true')">Force re-parse</button>
+ <button onclick="draft()">View draft and diff</button>
+ <button class="p" onclick="act('POST','/resume/approve')">Approve and publish</button>
+ <button onclick="act('POST','/resume/rollback')">Roll back</button>
+</p>
+<pre id="out">Ready.</pre>
+<h2>Edit draft</h2>
+<p>Hide a project with <code>"hidden": true</code> or fix a line, then save. Validated before saving.</p>
+<textarea id="ed" spellcheck="false"></textarea>
+<p><button class="p" onclick="save()">Save draft</button></p>
+<script>
+const $=id=>document.getElementById(id);
+$('t').value=sessionStorage.getItem('tok')||'';
+async function call(m,u,b){
+  sessionStorage.setItem('tok',$('t').value);
+  const r=await fetch(u,{method:m,headers:{'X-Admin-Token':$('t').value,'Content-Type':'application/json'},body:b});
+  const j=await r.json().catch(()=>({}));$('out').textContent=r.status+' '+JSON.stringify(j.diff||j.changes||j,null,2);return j;
+}
+async function act(m,u){await call(m,u)}
+async function draft(){const j=await call('GET','/resume/draft');if(j.draft)$('ed').value=JSON.stringify(j.draft,null,2)}
+async function save(){await call('PUT','/resume/draft',$('ed').value)}
+</script></body></html>

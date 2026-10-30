@@ -1,0 +1,532 @@
+{
+    "profile":  {
+                    "name":  "Akash Bhalshankar",
+                    "title":  "AI Engineer",
+                    "heroLines":  [
+                                      "I build AI",
+                                      "agents that",
+                                      "do real work."
+                                  ],
+                    "lead":  "AI Engineer at UBS since October 2025, building LLM agent pipelines and backend services with LangGraph, RAG and FastAPI.",
+                    "focus":  "LLM agents, RAG and FastAPI backends",
+                    "topStack":  [
+                                     "LangGraph",
+                                     "Azure OpenAI",
+                                     "Python"
+                                 ],
+                    "location":  "Hyderabad, Telangana, India",
+                    "openTo":  "AI Engineer and Full-Stack AI roles",
+                    "tagline":  "Ready to learn, explore and build.",
+                    "email":  "akashbhalshankar07@gmail.com",
+                    "phone":  "+91 9014160774",
+                    "links":  {
+                                  "linkedin":  "https://www.linkedin.com/in/akash-bhalshankar",
+                                  "github":  "https://github.com/AkashBhalshankar",
+                                  "site":  "https://akashbhalshankar.com"
+                              },
+                    "nowBuilding":  [
+                                        "LLM agent pipelines",
+                                        "human-in-the-loop approvals",
+                                        "RAG on Azure OpenAI",
+                                        "voice-first AI with Chikki"
+                                    ],
+                    "about":  [
+                                  "AI Engineer with 1.8+ years of experience building LLM agent pipelines and backend services. Skilled in LangChain/LangGraph orchestration, RAG, and FastAPI, with hands-on work integrating Azure OpenAI and human-in-the-loop approval workflows into live production systems.",
+                                  "Started in QA at MassMutual, testing ETL pipelines with Informatica and automating regression with Selenium. Now I build LLM agent pipelines at UBS: LangGraph orchestration, RAG, FastAPI services and Azure OpenAI. I built NavLearn (test-automation agent cutting manual test-authoring by 30-40%), AgriMentor during the UBS bootcamp, and Chikki on my own, all end-to-end."
+                              ],
+                    "contactLine":  "I\u0027m open to AI Engineer and Full-Stack AI roles, and always ready to learn something new. Send a note, or just talk to Chikki."
+                },
+    "highlights":  [
+                       {
+                           "value":  "30-40%",
+                           "label":  "less manual test-authoring effort with NavLearn test-automation agent"
+                       },
+                       {
+                           "value":  "5-7",
+                           "label":  "enterprise applications onboarded onto LangGraph multi-agent foundation"
+                       },
+                       {
+                           "value":  "2",
+                           "label":  "Azure certifications (AI-900, AZ-900)"
+                       }
+                   ],
+    "experience":  [
+                       {
+                           "role":  "Trainee AI Engineer",
+                           "org":  "UBS",
+                           "location":  "Hyderabad, India",
+                           "start":  "2025-10",
+                           "end":  null,
+                           "bullets":  [
+                                           "**Request Management Service - Application Onboarding**: Delivered 5-7 enterprise applications onto a LangGraph-based multi-agent foundation with a reflection agent that reviews outputs and proceeds without manual intervention.",
+                                           "Built onboarding logic generating SQL commands as part of agent output to streamline data setup for newly onboarded applications.",
+                                           "Integrated Microsoft Teams bot for human-in-the-loop approval, routing AI-generated responses to reviewers before final action.",
+                                           "Deployed and maintained Request Management Service in live environment; received recognition for quality and reliability.",
+                                           "**Provisioning Accelerator**: Contributed authentication module using Microsoft Entra ID and Microsoft Graph API for identity verification; developed file-handling logic for provisioning workflows.",
+                                           "**Vibe Testing**: Translated BDD specifications to runnable test specs using GitHub Copilot, created **NavLearn** (skill-file agent using nav-registry/action-registry) cutting manual test-authoring effort by 30-40%, integrated into **Vibe Testing** pipeline."
+                                       ]
+                       },
+                       {
+                           "role":  "QA Intern",
+                           "org":  "MassMutual",
+                           "location":  "Hyderabad, India",
+                           "start":  "2025-03",
+                           "end":  "2025-10",
+                           "bullets":  [
+                                           "**Investment Delivery Services:** ETL testing with Informatica and Microsoft SQL Server, validating data consistency between on-prem and cloud environments.",
+                                           "Automated regression scenarios with Selenium, raised defects in JIRA within Kanban-based Agile setup.",
+                                           "**Eagle Version Release (EVR):** Functional and regression testing against business requirements."
+                                       ]
+                       }
+                   ],
+    "projects":  [
+                     {
+                         "id":  "rms",
+                         "title":  "**Request Management Service - Application Onboarding**",
+                         "kind":  "work",
+                         "section":  "UBS",
+                         "featured":  false,
+                         "mascot":  null,
+                         "hidden":  false,
+                         "summary":  "LangGraph-based multi-agent foundation with reflection agent and human-in-the-loop approval via Microsoft Teams.",
+                         "description":  [
+
+                                         ],
+                         "bullets":  [
+                                         "Delivered 5-7 enterprise applications onto LangGraph multi-agent foundation with reflection agent",
+                                         "Built onboarding logic generating SQL commands as part of agent output",
+                                         "Integrated Microsoft Teams bot for human-in-the-loop approval before final action",
+                                         "Deployed and maintained in live environment; received recognition for quality and reliability"
+                                     ],
+                         "stack":  [
+                                       "LangGraph",
+                                       "FastAPI",
+                                       "Azure OpenAI",
+                                       "Microsoft Teams"
+                                   ],
+                         "liveUrl":  null,
+                         "repoUrl":  null,
+                         "challenges":  [
+
+                                        ],
+                         "features":  [
+
+                                      ]
+                     },
+                     {
+                         "id":  "provisioning",
+                         "title":  "**Provisioning Accelerator**",
+                         "kind":  "work",
+                         "section":  "UBS",
+                         "featured":  false,
+                         "mascot":  null,
+                         "hidden":  false,
+                         "summary":  "Secure authentication and file-handling for provisioning workflows.",
+                         "description":  [
+
+                                         ],
+                         "bullets":  [
+                                         "Contributed authentication module using Microsoft Entra ID and Microsoft Graph API",
+                                         "Developed file-handling logic to generate and manage files as part of provisioning workflow"
+                                     ],
+                         "stack":  [
+                                       "Microsoft Entra ID",
+                                       "Microsoft Graph",
+                                       "Python"
+                                   ],
+                         "liveUrl":  null,
+                         "repoUrl":  null,
+                         "challenges":  [
+
+                                        ],
+                         "features":  [
+
+                                      ]
+                     },
+                     {
+                         "id":  "vibetest",
+                         "title":  "**Vibe Testing**",
+                         "kind":  "work",
+                         "section":  "UBS",
+                         "featured":  false,
+                         "mascot":  null,
+                         "hidden":  false,
+                         "summary":  "BDD-to-test translation with AI assistance and **NavLearn** test-automation agent.",
+                         "description":  [
+                                             "Built as part of UBS Vibe Testing initiative to translate BDD specifications into runnable test spec files.",
+                                             "**NavLearn** uses GitHub Copilot assistance and custom registries to generate accurate test scripts validated against application behavior.",
+                                             "Integrated into existing Vibe Testing pipeline and adopted by QA/engineering teams."
+                                         ],
+                         "bullets":  [
+                                         "Translated BDD specifications to runnable test specs using GitHub Copilot",
+                                         "**NavLearn** (skill-file agent using nav-registry/action-registry): cuts manual test-authoring effort by 30-40%",
+                                         "Validated AI-generated test scripts against application behavior",
+                                         "Integrated **NavLearn** into existing Vibe Testing pipeline and adopted by QA/engineering teams"
+                                     ],
+                         "stack":  [
+                                       "GitHub Copilot",
+                                       "Selenium",
+                                       "Python"
+                                   ],
+                         "liveUrl":  null,
+                         "repoUrl":  null,
+                         "challenges":  [
+
+                                        ],
+                         "features":  [
+
+                                      ]
+                     },
+                     {
+                         "id":  "chikki",
+                         "title":  "**Chikki**",
+                         "kind":  "personal",
+                         "section":  "Flagship project",
+                         "featured":  true,
+                         "mascot":  "chikki",
+                         "hidden":  false,
+                         "summary":  "Voice-first AI career assistant at akashbhalshankar.com. Talk or type to ask about my work, grounded in my real resume with ATS resume tailoring.",
+                         "description": [
+  "Voice-first AI career assistant at akashbhalshankar.com.",
+  "Talk or type to ask about my work, grounded in your real resume with ATS tailoring."
+],
+                         "bullets": [
+  "Engineered a full-duplex voice interface with wake-word detection, Edge-TTS streaming, and an instant text-mode fallback for noisy environments.",
+  "Eliminated audio feedback loops by combining browser hardware AEC with a client-side playback mutex lock to prevent false self-interruption.",
+  "Designed a dynamic data pipeline using io.BytesIO and pypdf to hot-cache resume data from Google Drive, enabling zero-downtime updates.",
+  "Implemented an automated cascading failover hierarchy across Groq, Gemini, NVIDIA, and OpenRouter to prevent downtime during API rate limits.",
+  "Built an ATS-compliant, single-column PDF generator with ReportLab that dynamically re-ranks verified achievements based on conversation topics."
+],
+                         "stack":  [
+                                       "Python",
+                                       "FastAPI",
+                                       "WebSockets",
+                                       "LangChain",
+                                       "FAISS",
+                                       "Groq",
+                                       "Gemini API",
+                                       "NVIDIA NIM",
+                                       "React"
+                                   ],
+                         "liveUrl":  "https://akashbhalshankar.com",
+                         "repoUrl":  null,
+                         "challenges":  [
+
+                                        ],
+                         "features":  [
+
+                                      ]
+                      },
+                      {
+                          "id":  "cella1",
+                          "title":  "**CellA1**",
+                          "kind":  "personal",
+                          "section":  "Flagship project",
+                          "featured":  true,
+                          "mascot":  null,
+                          "hidden":  false,
+                          "summary":  "High-performance document and spreadsheet comparison engine for corporate finance, legal due diligence, and internal audit teams.",
+                          "description": [
+                              "CellA1 is a document and spreadsheet comparison engine for corporate finance, legal due diligence, and internal audit.",
+                              "Deterministic-first diffing with candidate-key outer joins and selective AI risk enrichment, zero token bloat."
+                          ],
+                          "bullets": [
+                              "Architected a full-stack diffing platform using React 19, TypeScript, Express, and Google Gemini under AIDLC.",
+                              "Eliminated AI hallucinations by separating deterministic Myers-LCS diffing and tabular outer joins from semantic risk enrichment.",
+                              "Engineered a Zero-Token Bypass Gate filtering identical and whitespace-only content, saving up to 100% of LLM token costs.",
+                              "Developed pure-JS binary decoders (ASCII85, Deflate/Flate, XML AST parsers) for PDFs and Office archives.",
+                              "Built and automated 10 end-to-end test suites ensuring regression-free execution across mobile and desktop."
+                          ],
+                          "stack": [
+                              "React 19",
+                              "TypeScript",
+                              "Vite",
+                              "Tailwind CSS",
+                              "Express.js",
+                              "Google Gemini",
+                              "SheetJS",
+                              "Playwright"
+                          ],
+                          "liveUrl":  "https://cella1.ai.studio",
+                          "repoUrl":  null,
+                          "challenges":  [
+
+                                         ],
+                          "features":  [
+
+                                       ]
+                      },
+                      {
+                          "id":  "navlearn",
+                         "title":  "**NavLearn**",
+                         "kind":  "work",
+                         "section":  "UBS internal tool",
+                         "featured":  false,
+                         "mascot":  null,
+                         "hidden":  true,
+                         "summary":  "Skill-file agent for Vibe Testing that writes test scripts using nav-registry and action-registry, cutting manual test-authoring effort by 30-40%.",
+                         "description":  [
+                                             "Built as part of UBS Vibe Testing initiative to translate BDD specifications into runnable test spec files.",
+                                             "Uses GitHub Copilot assistance and custom registries to generate accurate test scripts validated against application behavior.",
+                                             "Integrated into existing Vibe Testing pipeline and adopted by QA/engineering teams."
+                                         ],
+                         "bullets":  [
+                                         "Cuts manual test-authoring effort by 30-40%",
+                                         "Uses nav-registry and action-registry for script generation",
+                                         "Integrated with GitHub Copilot for BDD-to-test translation"
+                                     ],
+                         "stack":  [
+                                       "Python",
+                                       "GitHub Copilot",
+                                       "Selenium"
+                                   ],
+                         "liveUrl":  null,
+                         "repoUrl":  null,
+                         "challenges":  [
+
+                                        ],
+                         "features":  [
+
+                                      ]
+                     }
+                 ],
+    "skills":  [
+                   {
+                       "group":  "AI and LLM",
+                       "items":  [
+                                     "LLM",
+                                     "LangChain",
+                                     "LangGraph",
+                                     "RAG",
+                                     "FAISS",
+                                     "Azure OpenAI",
+                                     "Azure AI Foundry"
+                                 ]
+                   },
+                   {
+                       "group":  "Languages and frameworks",
+                       "items":  [
+                                     "Python",
+                                     "Java",
+                                     "FastAPI",
+                                     "Pydantic"
+                                 ]
+                   },
+                   {
+                       "group":  "Databases",
+                       "items":  [
+                                     "MySQL",
+                                     "SQLite",
+                                     "SQL"
+                                 ]
+                   },
+                   {
+                       "group":  "Cloud",
+                       "items":  [
+                                     "Azure OpenAI Service",
+                                     "Azure Blob Storage",
+                                     "Azure Container Apps",
+                                     "Microsoft Entra ID",
+                                     "Microsoft Graph"
+                                 ]
+                   },
+                   {
+                       "group":  "Tools and ways of working",
+                       "items":  [
+                                     "Git",
+                                     "GitHub Copilot",
+                                     "Selenium",
+                                     "Agile",
+                                     "Scrum"
+                                 ]
+                   }
+               ],
+    "certifications":  [
+                           {
+                               "name":  "UBS Certificate of Achievement – NextGen AI – Agents in Action",
+                               "issuer":  "UBS",
+                               "code":  "UBS"
+                           },
+                           {
+                               "name":  "Azure AI Fundamentals",
+                               "issuer":  "Microsoft AI-900",
+                               "code":  "AI"
+                           },
+                           {
+                               "name":  "Azure Fundamentals",
+                               "issuer":  "Microsoft AZ-900",
+                               "code":  "AZ"
+                           },
+                           {
+                               "name":  "Claude Code 101",
+                               "issuer":  "Anthropic course",
+                               "code":  "CC"
+                           }
+                       ],
+    "education":  [
+                      {
+                          "degree":  "B.Tech, Computer Science and Engineering",
+                          "school":  "Kamala Institute of Technology and Science, Karimnagar",
+                          "year":  "2024",
+                          "score":  "75%",
+                          "code":  "BT"
+                      },
+                      {
+                          "degree":  "Intermediate (MPC)",
+                          "school":  "SR Junior College, Adilabad",
+                          "year":  "2020",
+                          "score":  "91%",
+                          "code":  "12"
+                      }
+                  ],
+    "leadership":  [
+                       {
+                           "title":  "National Cadet Corps",
+                           "detail":  "Earned the B and C certificates and led a group of 60 members during an NCC camp."
+                       }
+                   ],
+    "achievements":  [
+
+                     ],
+    "meta":  {
+                 "updatedAt":  null,
+                 "sourceFileId":  null,
+                 "sourceModifiedTime":  null
+             },
+    "recommendations":  [
+
+                        ],
+    "events":  [
+                   {
+                       "id":  "events",
+                       "photos":  [
+                                      {
+                                          "event":  "Event",
+                                          "location":  "",
+                                          "src":  "/events/IMG_20260530_203441399_HDR.jpg",
+                                          "alt":  "",
+                                          "date":  "",
+                                          "tag":  "Meetup",
+                                          "title":  "Event"
+                                      },
+                                      {
+                                          "event":  "Event",
+                                          "location":  "",
+                                          "src":  "/events/IMG_20260530_204106315_HDR.jpg",
+                                          "alt":  "",
+                                          "date":  "",
+                                          "tag":  "Meetup",
+                                          "title":  "Event"
+                                      },
+                                      {
+                                          "event":  "Event",
+                                          "location":  "",
+                                          "src":  "/events/IMG_20260613_104109478_HDR.jpg",
+                                          "alt":  "",
+                                          "date":  "",
+                                          "tag":  "Meetup",
+                                          "title":  "Event"
+                                      },
+                                      {
+                                          "event":  "Event",
+                                          "location":  "",
+                                          "src":  "/events/IMG_20260613_173058340_HDR.jpg",
+                                          "alt":  "",
+                                          "date":  "",
+                                          "tag":  "Meetup",
+                                          "title":  "Event"
+                                      },
+                                      {
+                                          "event":  "Event",
+                                          "location":  "",
+                                          "src":  "/events/IMG_20260905_122709552_HDR.jpg",
+                                          "alt":  "",
+                                          "date":  "",
+                                          "tag":  "Meetup",
+                                          "title":  "Event"
+                                      },
+                                      {
+                                          "event":  "Event",
+                                          "location":  "",
+                                          "src":  "/events/IMG_20261013_085803232_HDR~2.jpg",
+                                          "alt":  "",
+                                          "date":  "",
+                                          "tag":  "Meetup",
+                                          "title":  "Event"
+                                      },
+                                      {
+                                          "event":  "Event",
+                                          "location":  "",
+                                          "src":  "/events/IMG_20261013_121821549_HDR~2.jpg",
+                                          "alt":  "",
+                                          "date":  "",
+                                          "tag":  "Meetup",
+                                          "title":  "Event"
+                                      },
+                                      {
+                                          "event":  "Event",
+                                          "location":  "",
+                                          "src":  "/events/IMG_20261013_122032469_HDR~2.jpg",
+                                          "alt":  "",
+                                          "date":  "",
+                                          "tag":  "Meetup",
+                                          "title":  "Event"
+                                      },
+                                      {
+                                          "event":  "Event",
+                                          "location":  "",
+                                          "src":  "/events/IMG_20261013_122405935_HDR~2.jpg",
+                                          "alt":  "",
+                                          "date":  "",
+                                          "tag":  "Meetup",
+                                          "title":  "Event"
+                                      },
+                                      {
+                                          "event":  "Event",
+                                          "location":  "",
+                                          "src":  "/events/IMG_20261013_122526758_HDR.jpg",
+                                          "alt":  "",
+                                          "date":  "",
+                                          "tag":  "Meetup",
+                                          "title":  "Event"
+                                      },
+                                      {
+                                          "event":  "Event",
+                                          "location":  "",
+                                          "src":  "/events/IMG_20261013_135029286.jpg",
+                                          "alt":  "",
+                                          "date":  "",
+                                          "tag":  "Meetup",
+                                          "title":  "Event"
+                                      },
+                                      {
+                                          "event":  "Event",
+                                          "location":  "",
+                                          "src":  "/events/IMG_20261013_152937703.jpg",
+                                          "alt":  "",
+                                          "date":  "",
+                                          "tag":  "Meetup",
+                                          "title":  "Event"
+                                      },
+                                      {
+                                          "event":  "Event",
+                                          "location":  "",
+                                          "src":  "/events/IMG_20261013_153445462_HDR.jpg",
+                                          "alt":  "",
+                                          "date":  "",
+                                          "tag":  "Meetup",
+                                          "title":  "Event"
+                                      },
+                                      {
+                                          "event":  "Event",
+                                          "location":  "",
+                                          "src":  "/events/IMG_20261024_192653624~2.jpg",
+                                          "alt":  "",
+                                          "date":  "",
+                                          "tag":  "Meetup",
+                                          "title":  "Event"
+                                      }
+                                  ]
+                   }
+               ]
+}

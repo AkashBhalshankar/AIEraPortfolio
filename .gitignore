@@ -1,0 +1,12 @@
+node_modules/
+dist/
+__pycache__/
+.pytest_cache/
+.env
+service-account.json
+backend/data/draft.json
+backend/data/state.json
+backend/data/resume.pdf
+backend/data/history/*.json
+.venv/
+backend/.venv/
