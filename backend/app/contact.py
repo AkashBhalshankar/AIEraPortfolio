@@ -57,7 +57,7 @@ def _one_line(text: str, n: int) -> str:
 def _send_resend(c: ContactIn) -> None:
     import httpx
     payload = {
-        "from": settings.contact_to,
+        "from": "onboarding@resend.dev",
         "to": [settings.contact_to],
         "reply_to": c.email,
         "subject": f"Portfolio message from {_one_line(c.name, 60)}",
