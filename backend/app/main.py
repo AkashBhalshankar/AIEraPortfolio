@@ -29,6 +29,10 @@ from .config import settings
 from .contact import ContactIn, deliver, rate_limited
 from .context import to_context
 app = FastAPI(title="Portfolio API", version="1.0.0")
+
+@app.on_event("startup")
+def _startup():
+    store.load()
 from .drive import fetch_resume_pdf
 from .llm import AllProvidersFailed
 from .sync import cached_pdf_path, run_sync
