@@ -59,7 +59,7 @@ export default function Navigator() {
 
   useEffect(() => {
     if (intro) return;
-    // speak only when user navigates, not on scroll
+    speak(SECTION_TEXT[active] || '');
   }, [active, intro]);
 
   const go = (id) => {
