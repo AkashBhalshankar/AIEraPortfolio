@@ -39,6 +39,7 @@ function Flagship({ p, kws }) {
       <Reveal as="h2" className="split in">{`Flagship project: ${String(p.title).replace(/\*\*/g, '')}`}</Reveal>
       <Reveal className="flag">
         {p.mascot === 'chikki' && <ChikkiBot />}
+        {p.image && <img src={p.image} alt={p.title} style={{ width: '100%', maxWidth: 320, borderRadius: 12, objectFit: 'cover' }} />}
         <div className="flag-r" style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
           {(p.description || [p.summary]).map((t, idx) => <p key={idx} style={{ margin: 0, fontSize: '0.95rem' }}><Marked text={t} kws={kws} /></p>)}
           {p.bullets?.length > 0 && (

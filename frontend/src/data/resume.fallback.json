@@ -225,6 +225,7 @@
                           "featured":  true,
                           "mascot":  null,
                           "hidden":  false,
+                          "image":  "/cella1.png",
                           "summary":  "High-performance document and spreadsheet comparison engine for corporate finance, legal due diligence, and internal audit teams.",
                           "description": [
                               "CellA1 is a document and spreadsheet comparison engine for corporate finance, legal due diligence, and internal audit.",
