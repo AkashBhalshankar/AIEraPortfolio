@@ -54,18 +54,22 @@ def _one_line(text: str, n: int) -> str:
     return re.sub(r"[\r\n]+", " ", text).strip()[:n]
 
 
-def _send_smtp(c: ContactIn) -> None:
-    msg = EmailMessage()
-    msg["Subject"] = f"Portfolio message from {_one_line(c.name, 60)}"
-    msg["From"] = settings.smtp_user or settings.contact_to
-    msg["To"] = settings.contact_to
-    msg["Reply-To"] = c.email
-    msg.set_content(f"From: {c.name} <{c.email}>\n\n{c.message}")
-    with smtplib.SMTP(settings.smtp_host, settings.smtp_port, timeout=15) as smtp:
-        smtp.starttls()
-        if settings.smtp_user:
-            smtp.login(settings.smtp_user, settings.smtp_pass)
-        smtp.send_message(msg)
+def _send_resend(c: ContactIn) -> None:
+    import httpx
+    payload = {
+        "from": settings.contact_to,
+        "to": [settings.contact_to],
+        "reply_to": c.email,
+        "subject": f"Portfolio message from {_one_line(c.name, 60)}",
+        "text": f"From: {c.name} <{c.email}>\n\n{c.message}",
+    }
+    r = httpx.post(
+        "https://api.resend.com/emails",
+        headers={"Authorization": f"Bearer {settings.resend_api_key}", "Content-Type": "application/json"},
+        json=payload,
+        timeout=15,
+    )
+    r.raise_for_status()
 
 
 async def deliver(c: ContactIn) -> str:
@@ -74,7 +78,7 @@ async def deliver(c: ContactIn) -> str:
     path = store._dir() / "messages.jsonl"
     with path.open("a", encoding="utf-8") as f:
         f.write(json.dumps(record, ensure_ascii=False) + "\n")
-    if settings.smtp_host and settings.contact_to:
-        await asyncio.to_thread(_send_smtp, c)
+    if settings.resend_api_key and settings.contact_to:
+        await asyncio.to_thread(_send_resend, c)
         return "sent"
     return "saved"

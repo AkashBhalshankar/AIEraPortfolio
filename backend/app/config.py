@@ -28,6 +28,7 @@ class Settings:
     auto_approve: bool = _bool("AUTO_APPROVE", False)
     preserve_curated: bool = _bool("PRESERVE_CURATED", True)
     contact_to: str = os.getenv("CONTACT_TO", "")
+    resend_api_key: str = os.getenv("RESEND_API_KEY", "")
     contact_per_hour: int = int(os.getenv("CONTACT_PER_HOUR", "5"))
     smtp_host: str = os.getenv("SMTP_HOST", "")
     smtp_port: int = int(os.getenv("SMTP_PORT", "587"))
